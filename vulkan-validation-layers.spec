@@ -13,9 +13,9 @@ BuildRequires:  cmake
 BuildRequires:  glslang-devel
 BuildRequires:  ninja
 BuildRequires:  python-devel
-BuildRequires:  spirv-tools-devel
-BuildRequires:  spirv-headers-devel
-BuildRequires:  vulkan-loader-devel
+BuildRequires:  libspirv-tools-devel
+BuildRequires:  spirv-headers
+BuildRequires:  pkgconfig(vulkan)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-server)
