@@ -5,15 +5,13 @@ Summary:        Vulkan validation layers
 
 License:        ASL 2.0
 URL:            https://github.com/KhronosGroup/Vulkan-ValidationLayers
-Source0:        %url/archive/sdk-%{version}.tar.gz#/Vulkan-ValidationLayers-sdk-%{version}.tar.gz
-Patch0:         fix_shared.patch
+Source0:        https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/v%{version}/%{name}-%{version}.tar.gz
+#Patch0:         fix_shared.patch
 
-BuildRequires:  gcc
-BuildRequires:  gcc-c++
-BuildRequires:  cmake3
+BuildRequires:  cmake
 BuildRequires:  glslang-devel
-BuildRequires:  ninja-build
-BuildRequires:  python%{python3_pkgversion}-devel
+BuildRequires:  ninja
+BuildRequires:  python-devel
 BuildRequires:  spirv-tools-devel
 BuildRequires:  spirv-headers-devel
 BuildRequires:  vulkan-loader-devel
@@ -46,16 +44,16 @@ developing applications that use %{name}.
 %global optflags %(echo %{optflags} | sed 's/-g /-g1 /')
 
 
-%cmake3 -DCMAKE_BUILD_TYPE=Release \
+%cmake -DCMAKE_BUILD_TYPE=Release \
         -DGLSLANG_INSTALL_DIR=%{_prefix} \
         -DBUILD_LAYER_SUPPORT_FILES:BOOL=ON \
         -DSPIRV_HEADERS_INSTALL_DIR=%{_includedir}/spirv \
         -DCMAKE_INSTALL_INCLUDEDIR=%{_includedir}/vulkan/
-%cmake_build
+%make_build
 
 
 %install
-%cmake_install
+%make_install -C build
 
 
 %ldconfig_scriptlets
