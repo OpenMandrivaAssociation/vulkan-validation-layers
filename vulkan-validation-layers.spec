@@ -1,7 +1,7 @@
 %define tarname Vulkan-ValidationLayers
 Name:           vulkan-validation-layers
-Version:        1.2.148.0
-Release:        1%{?dist}
+Version:        1.2.151
+Release:        1
 Summary:        Vulkan validation layers
 
 License:        ASL 2.0
