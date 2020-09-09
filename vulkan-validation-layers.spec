@@ -1,3 +1,6 @@
+%define _disable_ld_no_undefined 1
+%define _disable_lto 1
+
 %define tarname Vulkan-ValidationLayers
 Name:           vulkan-validation-layers
 Version:        1.2.151
@@ -41,6 +44,9 @@ developing applications that use %{name}.
 
 
 %build
+export CC=gcc
+export CXX=g++
+
 # Decrease debuginfo verbosity to reduce memory consumption even more
 %global optflags %(echo %{optflags} | sed 's/-g /-g1 /')
 
