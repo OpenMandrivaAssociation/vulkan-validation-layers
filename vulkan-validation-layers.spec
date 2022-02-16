@@ -48,6 +48,7 @@ developing applications that use %{name}.
 %cmake -DCMAKE_BUILD_TYPE=Release \
         -DGLSLANG_INSTALL_DIR=%{_prefix} \
         -DBUILD_LAYER_SUPPORT_FILES:BOOL=ON \
+        -DUSE_ROBIN_HOOD_HASHING:BOOL=OFF \
         -DSPIRV_HEADERS_INSTALL_DIR=%{_includedir}/spirv \
         -DCMAKE_INSTALL_INCLUDEDIR=%{_includedir}/vulkan/
 %make_build
