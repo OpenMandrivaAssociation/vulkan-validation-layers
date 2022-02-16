@@ -1,12 +1,12 @@
 %define tarname Vulkan-ValidationLayers
 Name:           vulkan-validation-layers
-Version:        1.2.179
+Version:        1.3.204
 Release:        1
 Summary:        Vulkan validation layers
 
 License:        ASL 2.0
 URL:            https://github.com/KhronosGroup/Vulkan-ValidationLayers
-Source0:        https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/v%{version}/%{tarname}-%{version}.tar.gz
+Source0:        https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/v%{version}/%{tarname}-sdk-%{version}.tar.gz
 #Patch0:         fix_shared.patch
 
 BuildRequires:  cmake
@@ -37,7 +37,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%autosetup -p1 -n %{tarname}-%{version}
+%autosetup -p1 -n %{tarname}-%{version}-sdk
 
 
 %build
