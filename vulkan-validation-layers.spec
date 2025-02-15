@@ -3,7 +3,7 @@
 
 %define tarname Vulkan-ValidationLayers
 Name:           vulkan-validation-layers
-Version:        1.2.151
+Version:        1.4.307
 Release:        1
 Summary:        Vulkan validation layers
 
