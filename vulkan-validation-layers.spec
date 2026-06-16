@@ -10,6 +10,7 @@ Source0:        https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/
 #Patch0:         fix_shared.patch
 
 BuildRequires:  cmake
+BuildRequires:  make
 BuildRequires:  glslang-devel
 BuildRequires:  ninja
 BuildRequires:  python-devel
