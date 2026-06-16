@@ -49,6 +49,7 @@ developing applications that use %{name}.
 
 
 %cmake -DCMAKE_BUILD_TYPE=Release \
+        -DUPDATE_DEPS=OFF \
         -DGLSLANG_INSTALL_DIR=%{_prefix} \
         -DBUILD_LAYER_SUPPORT_FILES:BOOL=ON \
         -DUSE_ROBIN_HOOD_HASHING:BOOL=OFF \
