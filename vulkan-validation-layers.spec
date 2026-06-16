@@ -1,6 +1,6 @@
 %define tarname Vulkan-ValidationLayers
 Name:           vulkan-validation-layers
-Version:        1.3.204.0
+Version:        1.4.350
 Release:        1
 Summary:        Vulkan validation layers
 
@@ -15,6 +15,8 @@ BuildRequires:  ninja
 BuildRequires:  python-devel
 BuildRequires:  libspirv-tools-devel
 BuildRequires:  spirv-headers
+BuildRequires:  vulkan-headers
+BuildRequires:  vulkan-utility-libraries
 BuildRequires:  pkgconfig(vulkan)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
