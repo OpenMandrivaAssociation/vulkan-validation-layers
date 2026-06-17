@@ -14,7 +14,7 @@ BuildRequires:  make
 BuildRequires:  glslang-devel
 BuildRequires:  ninja
 BuildRequires:  python-devel
-BuildRequires:  libspirv-tools-devel
+BuildRequires:  pkgconfig(SPIRV-Tools)
 BuildRequires:  spirv-headers
 BuildRequires:  vulkan-headers
 BuildRequires:  vulkan-utility-libraries
