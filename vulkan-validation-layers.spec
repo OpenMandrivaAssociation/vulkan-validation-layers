@@ -28,16 +28,7 @@ BuildRequires:  pkgconfig(xrandr)
 BuildRequires:  pkgconfig(xcb)
 
 %description
-Vulkan validation layers
-
-%package        devel
-Summary:        Development files for %{name}
-Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       vulkan-headers
-
-%description    devel
-The %{name}-devel package contains libraries and header files for
-developing applications that use %{name}.
+Vulkan validation layer.
 
 %prep
 %autosetup -p1 -n %{tarname}-%{version}
@@ -66,6 +57,3 @@ developing applications that use %{name}.
 %doc README.md CONTRIBUTING.md
 %{_datadir}/vulkan/explicit_layer.d/*.json
 %{_libdir}/libVkLayer_*.so
-
-%files devel
-#{_includedir}/vulkan/
