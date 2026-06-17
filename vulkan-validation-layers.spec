@@ -68,4 +68,4 @@ developing applications that use %{name}.
 %{_libdir}/libVkLayer_*.so
 
 %files devel
-%{_includedir}/vulkan/
+#{_includedir}/vulkan/
