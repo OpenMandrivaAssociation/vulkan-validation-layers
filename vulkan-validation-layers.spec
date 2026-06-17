@@ -61,10 +61,6 @@ developing applications that use %{name}.
 %install
 %make_install -C build
 
-
-%ldconfig_scriptlets
-
-
 %files
 %license LICENSE.txt
 %doc README.md CONTRIBUTING.md
