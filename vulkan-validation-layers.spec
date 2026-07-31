@@ -1,6 +1,6 @@
 %define tarname Vulkan-ValidationLayers
 Name:           vulkan-validation-layers
-Version:        1.4.350
+Version:        1.4.357
 Release:        1
 Summary:        Vulkan validation layers
 
@@ -31,7 +31,7 @@ BuildRequires:  pkgconfig(xcb)
 Vulkan validation layer.
 
 %prep
-%autosetup -p1 -n %{tarname}-%{version}
+%autosetup -p1 -n Vulkan-ValidationLayers-1.4.357
 
 
 %build
